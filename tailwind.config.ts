@@ -13,7 +13,7 @@ const config: Config = {
         "bg-elev": "#0d0d0d",
         fg: "#f4f4f4",
         "fg-dim": "rgba(244,244,244,0.5)",
-        accent: "#c8ff2e",
+        accent: "#c2ad76",
         amber: "#ff6a2e",
       },
       fontFamily: {
