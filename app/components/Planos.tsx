@@ -53,7 +53,7 @@ export default function Planos() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as [number,number,number,number] }}
           className="font-display font-black uppercase text-section text-fg leading-[0.9]"
         >
-          ESCOLHE O TEU<br />PROTOCOLO.
+          O PLANO IDEAL<br />PARA TI.
         </motion.h2>
       </div>
 
