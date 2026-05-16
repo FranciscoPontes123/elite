@@ -1,17 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const staff = [
   {
     num: "S/01",
     nome: "Pedro Alves",
     credenciais: ["Licenciado em Treino Desportivo", "UEFA C Coach"],
+    foto: "/pedro.png",
   },
   {
     num: "S/02",
     nome: "João",
     credenciais: ["— informação pendente —"],
+    foto: null,
   },
 ];
 
@@ -54,29 +57,31 @@ export default function Staff() {
             }}
             className="border-r border-rule last:border-r-0 flex flex-col shrink-0 w-[80vw] md:w-auto snap-start"
           >
-            {/* Foto placeholder */}
+            {/* Foto */}
             <div className="relative w-full aspect-[3/4] bg-bg-elev overflow-hidden">
-              <svg
-                className="absolute inset-0 w-full h-full opacity-10"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <pattern
-                    id={`diag-${i}`}
-                    width="24"
-                    height="24"
-                    patternUnits="userSpaceOnUse"
-                    patternTransform="rotate(45)"
-                  >
-                    <line x1="0" y1="0" x2="0" y2="24" stroke="#f4f4f4" strokeWidth="1" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill={`url(#diag-${i})`} />
-              </svg>
-              <div className="absolute top-3 left-3 font-mono text-label text-fg-dim uppercase tracking-[0.22em]">
-                // foto — aguarda asset
-              </div>
-              <span className="absolute top-3 right-3 w-1.5 h-1.5 rounded-full bg-accent" />
+              {pessoa.foto ? (
+                <Image
+                  src={pessoa.foto}
+                  alt={pessoa.nome}
+                  fill
+                  className="object-cover object-top"
+                />
+              ) : (
+                <>
+                  <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <pattern id={`diag-${i}`} width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                        <line x1="0" y1="0" x2="0" y2="24" stroke="#f4f4f4" strokeWidth="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill={`url(#diag-${i})`} />
+                  </svg>
+                  <div className="absolute top-3 left-3 font-mono text-label text-fg-dim uppercase tracking-[0.22em]">
+                    // foto — aguarda asset
+                  </div>
+                  <span className="absolute top-3 right-3 w-1.5 h-1.5 rounded-full bg-accent" />
+                </>
+              )}
             </div>
 
             {/* Info */}

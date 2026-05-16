@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 14 },
@@ -79,37 +80,13 @@ export default function Hero() {
 function MediaPlaceholder() {
   return (
     <div className="relative w-full aspect-video bg-bg-elev overflow-hidden">
-      <svg
-        className="absolute inset-0 w-full h-full opacity-20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <pattern
-            id="diag"
-            width="24"
-            height="24"
-            patternUnits="userSpaceOnUse"
-            patternTransform="rotate(45)"
-          >
-            <line x1="0" y1="0" x2="0" y2="24" stroke="#f4f4f4" strokeWidth="1" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#diag)" />
-      </svg>
-
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative w-8 h-8">
-          <span className="absolute inset-x-0 top-1/2 h-px bg-fg-dim" />
-          <span className="absolute inset-y-0 left-1/2 w-px bg-fg-dim" />
-          <span className="absolute inset-0 m-auto w-2 h-2 border border-fg-dim" />
-        </div>
-      </div>
-
-      <div className="absolute top-3 left-3 font-mono text-label text-fg-dim uppercase tracking-[0.22em]">
-        // foto / vídeo do atleta — aguarda asset
-      </div>
-
-      <span className="absolute top-3 right-3 w-1.5 h-1.5 rounded-full bg-accent" />
+      <Image
+        src="/treino.png"
+        alt="Sessão de treino Elite Football Lab"
+        fill
+        className="object-cover"
+        priority
+      />
     </div>
   );
 }
