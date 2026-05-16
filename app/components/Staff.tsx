@@ -65,6 +65,8 @@ export default function Staff() {
                   alt={pessoa.nome}
                   fill
                   className="object-cover object-top"
+                  quality={90}
+                  sizes="(max-width: 768px) 80vw, 50vw"
                 />
               ) : (
                 <>

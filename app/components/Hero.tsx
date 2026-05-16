@@ -86,6 +86,8 @@ function MediaPlaceholder() {
         fill
         className="object-cover"
         priority
+        quality={90}
+        sizes="(max-width: 768px) 100vw, 90vw"
       />
     </div>
   );
