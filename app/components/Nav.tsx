@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const links = [
   { label: "Protocolo", href: "#protocolo" },
@@ -38,12 +39,15 @@ export default function Nav() {
       {/* Main nav row */}
       <nav className="px-[clamp(20px,5vw,72px)] h-14 flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#"
-          className="font-display font-black text-[15px] uppercase tracking-wider text-fg leading-none"
-        >
-          Elite<br />
-          <span className="text-accent">Football Lab</span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo.jpg"
+            alt="Elite Football Lab"
+            width={120}
+            height={40}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop links */}
@@ -90,7 +94,7 @@ export default function Nav() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
+            initial={{ height: 0 as number, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
