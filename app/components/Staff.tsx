@@ -40,7 +40,7 @@ export default function Staff() {
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 border-t border-rule">
+      <div className="flex overflow-x-auto md:grid md:grid-cols-2 border-t border-rule snap-x snap-mandatory scrollbar-none">
         {staff.map((pessoa, i) => (
           <motion.div
             key={pessoa.num}
@@ -52,7 +52,7 @@ export default function Staff() {
               ease: [0.25, 0.1, 0.25, 1] as [number,number,number,number],
               delay: i * 0.1,
             }}
-            className="border-r border-rule last:border-r-0 flex flex-col"
+            className="border-r border-rule last:border-r-0 flex flex-col shrink-0 w-[80vw] md:w-auto snap-start"
           >
             {/* Foto placeholder */}
             <div className="relative w-full aspect-[3/4] bg-bg-elev overflow-hidden">
