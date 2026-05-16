@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const links = [
+  { label: "Início", href: "#inicio" },
   { label: "Protocolo", href: "#protocolo" },
   { label: "Staff", href: "#staff" },
   { label: "Planos", href: "#planos" },

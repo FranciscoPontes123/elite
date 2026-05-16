@@ -33,3 +33,7 @@ body {
   background: var(--accent);
   color: #070707;
 }
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
