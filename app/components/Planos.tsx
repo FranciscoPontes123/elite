@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useModal } from "@/app/context/ModalContext";
 
 const planos = [
   {
@@ -33,6 +34,7 @@ const planos = [
 ];
 
 export default function Planos() {
+  const { openModal } = useModal();
   return (
     <section id="planos" className="border-t border-rule">
       <div className="px-[clamp(20px,5vw,72px)] pt-[clamp(64px,10vw,140px)] pb-16">
@@ -114,8 +116,8 @@ export default function Planos() {
             </ul>
 
             {/* CTA */}
-            <a
-              href="#contacto"
+            <button
+              onClick={openModal}
               className={`mt-auto inline-flex items-center justify-center font-mono text-label uppercase tracking-[0.18em] px-6 py-3.5 transition-colors duration-150 ${
                 plano.destaque
                   ? "bg-accent text-bg hover:bg-fg"
@@ -123,7 +125,7 @@ export default function Planos() {
               }`}
             >
               Marcar avaliação
-            </a>
+            </button>
           </motion.div>
         ))}
       </div>

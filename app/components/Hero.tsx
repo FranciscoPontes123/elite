@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useModal } from "@/app/context/ModalContext";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 14 },
@@ -12,6 +13,7 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  const { openModal } = useModal();
   return (
     <section id="inicio" className="relative min-h-screen flex flex-col justify-between pt-[calc(3.5rem+2rem)] pb-16 overflow-hidden">
 
@@ -46,12 +48,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col gap-3">
-            <a
-              href="#contacto"
+            <button
+              onClick={openModal}
               className="inline-flex items-center justify-center bg-accent text-bg font-mono text-label uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-fg transition-colors duration-150"
             >
               + Marcar avaliação
-            </a>
+            </button>
             <a
               href="#protocolo"
               className="inline-flex items-center justify-center border border-rule font-mono text-label uppercase tracking-[0.18em] px-4 py-3 text-fg-dim hover:text-fg hover:border-fg transition-colors duration-150"
