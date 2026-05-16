@@ -42,9 +42,7 @@ export default function Hero() {
           className="md:max-w-xs flex flex-col gap-6 pb-2"
         >
           <p className="font-body text-[17px] leading-[1.55] text-fg-dim">
-            Não treinamos equipas. Treinamos o atleta. Um laboratório de
-            desenvolvimento técnico individual, com método mensurável e linguagem
-            de elite.
+            Focamo-nos no atleta. No seu desenvolvimento individual — técnico, táctico, mental. Uma equipa de especialistas que vivem o futebol, dedicada a jovens que querem mais.
           </p>
 
           <div className="flex flex-col gap-3">

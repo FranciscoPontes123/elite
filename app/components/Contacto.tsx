@@ -15,7 +15,7 @@ export default function Contacto() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    const res = await fetch("https://formspree.io/f/FORM_ID", {
+    const res = await fetch("https://formspree.io/f/mdabqqdn", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
@@ -60,7 +60,7 @@ export default function Contacto() {
           <span className="font-mono text-label text-fg-dim">·</span>
           <span className="font-mono text-label text-fg tracking-[0.1em]">Parque de Jogos do CER Tenente Valdez, Telheiras, Lisboa</span>
         </div>
-        <div className="w-full h-[360px] grayscale contrast-[1.1] brightness-75">
+        <div className="w-full h-[360px]">
           <iframe
             src="https://maps.google.com/maps?q=38.7782963,-9.2050189&z=16&output=embed"
             width="100%"
@@ -125,7 +125,7 @@ export default function Contacto() {
             <div className="h-full flex flex-col justify-center gap-4">
               <span className="text-accent font-mono text-label uppercase tracking-[0.22em]">// Enviado</span>
               <p className="font-display font-black uppercase text-[clamp(32px,4vw,64px)] text-fg leading-none">
-                Recebemos.<br />Falamos em breve.
+                Obrigado pelo interesse. A nossa equipa entrará em contacto consigo em breve.
               </p>
             </div>
           ) : (
