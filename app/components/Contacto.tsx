@@ -74,7 +74,7 @@ export default function Contacto() {
         </div>
       </div>
 
-      <div className="border-t border-rule grid grid-cols-1 md:grid-cols-2">
+      <div id="formulario" className="border-t border-rule grid grid-cols-1 md:grid-cols-2" style={{ scrollMarginTop: "6rem" }}>
         {/* Contactos directos */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}

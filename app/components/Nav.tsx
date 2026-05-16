@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useModal } from "@/app/context/ModalContext";
 
 const links = [
   { label: "Início", href: "#inicio" },
@@ -14,7 +13,6 @@ const links = [
 ];
 
 export default function Nav() {
-  const { openModal } = useModal();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -67,12 +65,12 @@ export default function Nav() {
         </ul>
 
         {/* CTA */}
-        <button
-          onClick={openModal}
+        <a
+          href="#formulario"
           className="hidden md:inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 hover:bg-fg transition-colors duration-150"
         >
           + Marcar avaliação
-        </button>
+        </a>
 
         {/* Hamburger */}
         <button
@@ -115,12 +113,13 @@ export default function Nav() {
                 </li>
               ))}
               <li>
-                <button
-                  onClick={() => { setMenuOpen(false); openModal(); }}
+                <a
+                  href="#formulario"
+                  onClick={() => setMenuOpen(false)}
                   className="inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5"
                 >
                   + Marcar avaliação
-                </button>
+                </a>
               </li>
             </ul>
           </motion.div>
