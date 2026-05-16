@@ -109,7 +109,7 @@ export default function Contacto() {
 
           <p className="font-mono text-label text-fg-dim tracking-[0.15em] mt-auto">
             Resposta em 24h · Sem compromisso.<br />
-            Avaliação inicial — 35€, reembolsada na inscrição.
+            Avaliação inicial — €—, reembolsada na inscrição.
           </p>
         </motion.div>
 
