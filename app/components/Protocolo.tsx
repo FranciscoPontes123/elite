@@ -17,7 +17,7 @@ const fases = [
     duracao: "48 h",
     status: "Personalizado",
     descricao:
-      "Programa individual construído a partir dos dados da avaliação. Com objectivos por bloco e métricas de progresso.",
+      "Programa individual construído a partir da avaliação. Totalmente personalizado.",
   },
   {
     num: "P/03",
@@ -25,7 +25,7 @@ const fases = [
     duracao: "Semanal",
     status: "1-on-1",
     descricao:
-      "Sessões técnicas focadas. Futebol de rua. Repetição com propósito. Intensidade com atenção ao detalhe.",
+      "Sessões técnicas focadas no atleta. Intensidade com atenção ao detalhe.",
   },
   {
     num: "P/04",
@@ -33,7 +33,7 @@ const fases = [
     duracao: "Mensal",
     status: "Contínua",
     descricao:
-      "Filmagem, estatísticas, evolução. O atleta vê o que mudou e o que falta. Sem adivinhação.",
+      "Filmagem, estatísticas e evolução. O atleta vê o que mudou e o que falta.",
   },
 ];
 
@@ -60,8 +60,6 @@ export default function Protocolo() {
           className="font-display font-black uppercase text-section text-fg leading-[0.9]"
         >
           QUATRO FASES.
-          <br />
-          <span className="text-accent">ZERO FILLER.</span>
         </motion.h2>
       </div>
 
