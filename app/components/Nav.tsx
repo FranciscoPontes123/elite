@@ -7,8 +7,7 @@ import Image from "next/image";
 const links = [
   { label: "Protocolo", href: "#protocolo" },
   { label: "Staff", href: "#staff" },
-  { label: "Lab", href: "#lab" },
-  { label: "Inscrição", href: "#inscricao" },
+  { label: "Planos", href: "#planos" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -66,7 +65,7 @@ export default function Nav() {
 
         {/* CTA */}
         <a
-          href="#inscricao"
+          href="#contacto"
           className="hidden md:inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 hover:bg-fg transition-colors duration-150"
         >
           + Marcar avaliação
@@ -114,7 +113,7 @@ export default function Nav() {
               ))}
               <li>
                 <a
-                  href="#inscricao"
+                  href="#contacto"
                   onClick={() => setMenuOpen(false)}
                   className="inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5"
                 >
