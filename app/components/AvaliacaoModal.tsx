@@ -57,7 +57,7 @@ export default function AvaliacaoModal() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 24 }}
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] as [number,number,number,number] }}
-            className="fixed inset-x-4 top-1/2 -translate-y-1/2 md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-lg bg-bg-elev border border-rule z-[101] p-8 md:p-10"
+            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-lg bg-bg-elev border border-rule z-[101] p-8 md:p-10"
           >
             {/* Fechar */}
             <button
