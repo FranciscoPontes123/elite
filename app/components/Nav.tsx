@@ -30,11 +30,6 @@ export default function Nav() {
           : "bg-transparent"
       }`}
     >
-      {/* Top bar — hora ao vivo + contador */}
-      <div className="border-b border-rule px-[clamp(20px,5vw,72px)] py-1.5 flex items-center justify-between font-mono text-[10px] text-fg-dim uppercase tracking-[0.22em]">
-        <LiveClock />
-        <span>P1 &nbsp;·&nbsp; ESP: 4 / SP: 28–34</span>
-      </div>
 
       {/* Main nav row */}
       <nav className="px-[clamp(20px,5vw,72px)] h-14 flex items-center justify-between">
@@ -129,20 +124,3 @@ export default function Nav() {
   );
 }
 
-function LiveClock() {
-  const [time, setTime] = useState("");
-
-  useEffect(() => {
-    const fmt = () =>
-      new Date().toLocaleTimeString("pt-PT", {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      });
-    setTime(fmt());
-    const id = setInterval(() => setTime(fmt()), 1000);
-    return () => clearInterval(id);
-  }, []);
-
-  return <span>{time}</span>;
-}
