@@ -71,7 +71,7 @@ export default function Hero() {
         className="mt-10 mx-[clamp(20px,5vw,72px)]"
       >
         <video
-          src="/video.mp4"
+          src="/video_4k.mp4"
           autoPlay
           muted
           loop
