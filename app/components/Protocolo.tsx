@@ -42,16 +42,6 @@ export default function Protocolo() {
     <section id="protocolo" className="border-t border-rule">
       {/* Header */}
       <div className="px-[clamp(20px,5vw,72px)] pt-[clamp(64px,10vw,140px)] pb-16">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim mb-6"
-        >
-          // 02 — Protocolo
-        </motion.p>
-
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,10 +69,7 @@ export default function Protocolo() {
             className="border-r border-rule last:border-r-0 border-b md:border-b-0 px-[clamp(20px,4vw,48px)] py-10 flex flex-col gap-6"
           >
             {/* Topo */}
-            <div className="flex items-center justify-between">
-              <span className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim">
-                {fase.num}
-              </span>
+            <div className="flex items-center justify-end">
               <div className="flex items-center gap-2">
                 <span className="font-mono text-label text-fg-dim">{fase.duracao}</span>
                 <span className="font-mono text-label text-accent uppercase tracking-[0.15em]">

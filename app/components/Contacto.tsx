@@ -77,6 +77,8 @@ export default function Contacto() {
               src="/Campo.jpeg"
               alt="Campo Elite Football Lab"
               fill
+              quality={100}
+              sizes="50vw"
               className="object-cover"
             />
           </div>
