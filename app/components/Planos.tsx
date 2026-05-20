@@ -5,29 +5,47 @@ import { motion } from "framer-motion";
 const planos = [
   {
     num: "P/01",
-    nome: "1-on-1",
-    preco: "—",
-    unidade: "/ sessão",
-    descricao: "Sessão individual com coach dedicado. Foco total no teu desenvolvimento técnico.",
-    items: ["60 min por sessão", "Plano personalizado", "Relatório de evolução", "Acesso à análise de vídeo"],
+    nome: "1x semana",
+    preco: "20€",
+    unidade: "/ semana",
+    descricao: "Um treino semanal com foco técnico, físico e competitivo. Ideal para começar.",
+    items: ["1 sessão por semana", "Desenvolvimento técnico", "Acompanhamento personalizado"],
     destaque: false,
   },
   {
     num: "P/02",
-    nome: "Pack Mensal",
-    preco: "—",
-    unidade: "/ mês",
-    descricao: "O compromisso que gera resultados. Sessões semanais com acompanhamento contínuo.",
-    items: ["4 sessões por mês", "Plano personalizado", "Relatório mensal", "Análise de vídeo incluída", "Prioridade na marcação"],
-    destaque: true,
+    nome: "2x semana",
+    preco: "40€",
+    unidade: "/ semana",
+    descricao: "Dois treinos semanais com vertentes do jogo distintas em cada sessão.",
+    items: ["2 sessões por semana", "Vertentes complementares", "Acompanhamento personalizado"],
+    destaque: false,
   },
   {
     num: "P/03",
-    nome: "Grupo Reduzido",
-    preco: "—",
-    unidade: "/ sessão",
-    descricao: "Treino técnico em grupo pequeno. Máximo 4 atletas. Mesma exigência, diferente dinâmica.",
-    items: ["Máx. 4 atletas", "60 min por sessão", "Nível homogéneo", "Relatório partilhado"],
+    nome: "3x semana",
+    preco: "55€",
+    unidade: "/ semana",
+    descricao: "Três treinos semanais para um desenvolvimento mais completo e consistente.",
+    items: ["3 sessões por semana", "Progressão acelerada", "Acompanhamento personalizado"],
+    destaque: true,
+  },
+  {
+    num: "P/04",
+    nome: "4x semana",
+    preco: "70€",
+    unidade: "/ semana",
+    descricao: "Quatro treinos semanais para atletas que querem evoluir ao máximo ritmo.",
+    items: ["4 sessões por semana", "Alta frequência", "Acompanhamento personalizado"],
+    destaque: false,
+  },
+  {
+    num: "P/05",
+    nome: "5x semana",
+    preco: "80€",
+    unidade: "/ semana",
+    descricao: "Treino diário. O plano mais completo para atletas totalmente comprometidos.",
+    items: ["5 sessões por semana", "Treino diário", "Acompanhamento personalizado"],
     destaque: false,
   },
 ];
@@ -57,7 +75,7 @@ export default function Planos() {
         </motion.h2>
       </div>
 
-      <div className="flex overflow-x-auto md:grid md:grid-cols-3 border-t border-rule snap-x snap-mandatory scrollbar-none">
+      <div className="flex overflow-x-auto md:grid md:grid-cols-5 border-t border-rule snap-x snap-mandatory scrollbar-none">
         {planos.map((plano, i) => (
           <motion.div
             key={plano.num}

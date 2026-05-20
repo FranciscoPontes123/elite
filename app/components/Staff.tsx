@@ -11,9 +11,9 @@ const staff = [
   },
   {
     num: "S/02",
-    nome: "João",
+    nome: "João Jacinto",
     foto: "/Jota.jpeg",
-    credenciais: ["— informação pendente —"],
+    credenciais: ["Especialização em Treinador de Futebol - Barça Innovation Hub"],
   },
 ];
 

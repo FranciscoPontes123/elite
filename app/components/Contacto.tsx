@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const planoOpcoes = ["1-on-1", "Pack Mensal", "Grupo Reduzido", "Ainda não sei"];
+const planoOpcoes = ["1x semana — 20€", "2x semana — 40€", "3x semana — 55€", "4x semana — 70€", "5x semana — 80€", "Ainda não sei"];
 
 export default function Contacto() {
   const [enviado, setEnviado] = useState(false);
@@ -104,6 +104,16 @@ export default function Contacto() {
               className="font-display font-black text-[clamp(28px,4vw,56px)] uppercase text-fg leading-none hover:text-accent transition-colors duration-150"
             >
               @elite.football_lab
+            </a>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <span className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim">Email</span>
+            <a
+              href="mailto:elitefootballlab26@gmail.com"
+              className="font-display font-black text-[clamp(20px,2.5vw,36px)] uppercase text-fg leading-none hover:text-accent transition-colors duration-150"
+            >
+              elitefootballlab26@gmail.com
             </a>
           </div>
 
