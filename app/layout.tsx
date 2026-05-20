@@ -27,9 +27,6 @@ export const metadata: Metadata = {
   title: "Elite Football Lab — Treino técnico individual de futebol em Lisboa",
   description:
     "Laboratório de desenvolvimento técnico individual. Método personalizado, 1-on-1, para jovens atletas e profissionais em Lisboa (Odivelas).",
-  icons: {
-    icon: "/Logo.png",
-  },
   openGraph: {
     title: "Elite Football Lab",
     description: "Trabalhamos o atleta. Não o jogador médio.",
