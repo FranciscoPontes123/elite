@@ -36,7 +36,7 @@ export default function Nav() {
         {/* Logo */}
         <a href="#" className="flex items-center">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Elite Football Lab"
             width={120}
             height={40}
