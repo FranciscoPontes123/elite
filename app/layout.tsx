@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Laboratório de desenvolvimento técnico individual. Método personalizado, 1-on-1, para jovens atletas e profissionais em Lisboa (Odivelas).",
   icons: {
-    icon: "/logo.png",
+    icon: "/Logo.png",
   },
   openGraph: {
     title: "Elite Football Lab",
