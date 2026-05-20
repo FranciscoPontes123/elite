@@ -72,7 +72,7 @@ export default function Contacto() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização Elite Football Lab"
           />
-          <div className="relative h-[360px] hidden md:block">
+          <div className="relative h-[360px] hidden md:block overflow-hidden">
             <Image
               src="/Campo.jpeg"
               alt="Campo Elite Football Lab"
@@ -127,8 +127,7 @@ export default function Contacto() {
           </div>
 
           <p className="font-mono text-label text-fg-dim tracking-[0.15em] mt-auto">
-            Resposta em 24h · Sem compromisso.<br />
-            Avaliação inicial — €—, reembolsada na inscrição.
+            Avaliação inicial incluída na inscrição de qualquer plano. · Resposta em 24h · Sem compromisso.
           </p>
         </motion.div>
 
