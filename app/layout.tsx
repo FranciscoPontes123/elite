@@ -26,7 +26,7 @@ const bigShoulders = Big_Shoulders_Display({
 export const metadata: Metadata = {
   title: "Elite Football Lab — Treino técnico individual de futebol em Lisboa",
   description:
-    "Laboratório de desenvolvimento técnico individual. Método personalizado, 1-on-1, para jovens atletas e profissionais em Lisboa (Telheiras).",
+    "Laboratório de desenvolvimento técnico individual. Método personalizado, 1-on-1, para jovens atletas e profissionais em Lisboa (Odivelas).",
   openGraph: {
     title: "Elite Football Lab",
     description: "Trabalhamos o atleta. Não o jogador médio.",

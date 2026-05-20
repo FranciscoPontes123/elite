@@ -58,7 +58,7 @@ export default function Contacto() {
         <div className="px-[clamp(20px,5vw,72px)] py-4 flex items-center gap-3">
           <span className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim">Localização</span>
           <span className="font-mono text-label text-fg-dim">·</span>
-          <span className="font-mono text-label text-fg tracking-[0.1em]">Parque de Jogos do CER Tenente Valdez, Telheiras, Lisboa</span>
+          <span className="font-mono text-label text-fg tracking-[0.1em]">Parque de Jogos do CER Tenente Valdez, Odivelas, Lisboa</span>
         </div>
         <div className="w-full h-[360px]">
           <iframe
