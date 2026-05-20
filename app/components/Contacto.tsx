@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -60,7 +61,7 @@ export default function Contacto() {
           <span className="font-mono text-label text-fg-dim">·</span>
           <span className="font-mono text-label text-fg tracking-[0.1em]">Parque de Jogos do CER Tenente Valdez, Odivelas, Lisboa</span>
         </div>
-        <div className="w-full h-[360px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-[360px]">
           <iframe
             src="https://maps.google.com/maps?q=38.7782963,-9.2050189&z=16&output=embed"
             width="100%"
@@ -71,6 +72,14 @@ export default function Contacto() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização Elite Football Lab"
           />
+          <div className="relative h-[360px] hidden md:block">
+            <Image
+              src="/Campo.jpeg"
+              alt="Campo Elite Football Lab"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
 
