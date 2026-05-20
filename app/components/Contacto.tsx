@@ -33,16 +33,6 @@ export default function Contacto() {
     <section id="contacto" className="border-t border-rule">
       {/* Header */}
       <div className="px-[clamp(20px,5vw,72px)] pt-[clamp(64px,10vw,140px)] pb-16">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim mb-6"
-        >
-          // 05 — Contacto
-        </motion.p>
-
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

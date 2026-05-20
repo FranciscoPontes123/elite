@@ -54,16 +54,6 @@ export default function Planos() {
   return (
     <section id="planos" className="border-t border-rule">
       <div className="px-[clamp(20px,5vw,72px)] pt-[clamp(64px,10vw,140px)] pb-16">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim mb-6"
-        >
-          // 04 — Planos
-        </motion.p>
-
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,9 +90,6 @@ export default function Planos() {
 
             {/* Topo */}
             <div className="flex flex-col gap-3">
-              <span className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim">
-                {plano.num}
-              </span>
               <h3 className="font-display font-black uppercase text-card text-fg leading-none">
                 {plano.nome}
               </h3>

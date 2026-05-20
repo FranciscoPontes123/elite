@@ -60,9 +60,6 @@ export default function Staff() {
 
             {/* Info */}
             <div className="px-[clamp(20px,4vw,48px)] py-8 flex flex-col gap-4">
-              <span className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim">
-                {pessoa.num}
-              </span>
               <h3 className="font-display font-black uppercase text-card text-fg leading-none">
                 {pessoa.nome}
               </h3>
