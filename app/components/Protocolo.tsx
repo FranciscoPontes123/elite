@@ -9,7 +9,7 @@ const fases = [
     duracao: "Individual",
     status: "1-on-1",
     descricao:
-      "Trabalho técnico personalizado. Cada sessão adaptada ao jogador — não ao grupo.",
+      "Trabalho técnico personalizado. Cada sessão adaptada ao jogador.",
   },
   {
     num: "P/02",
@@ -25,7 +25,7 @@ const fases = [
     duracao: "Contínuo",
     status: "Intenso",
     descricao:
-      "Situações de jogo reais. O atleta é treinado para competir, não apenas para treinar.",
+      "Cenários realistas de jogo, que fazem notar a diferença ao longo da época.",
   },
 ];
 

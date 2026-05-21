@@ -136,7 +136,7 @@ export default function Planos() {
       {/* Nota de rodapé */}
       <div className="px-[clamp(20px,5vw,72px)] py-6 border-t border-rule">
         <p className="font-mono text-label text-fg-dim tracking-[0.15em]">
-          Avaliação inicial incluída na inscrição de qualquer plano. · Resposta em 24h · Sem compromisso.
+          Resposta em 24h · Sem compromisso.
         </p>
       </div>
     </section>

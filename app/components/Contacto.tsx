@@ -119,7 +119,7 @@ export default function Contacto() {
           </div>
 
           <p className="font-mono text-label text-fg-dim tracking-[0.15em] mt-auto">
-            Avaliação inicial incluída na inscrição de qualquer plano. · Resposta em 24h · Sem compromisso.
+            Resposta em 24h · Sem compromisso.
           </p>
         </motion.div>
 
