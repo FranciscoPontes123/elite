@@ -52,6 +52,16 @@ export default function Contacto() {
           <span className="font-mono text-label text-fg tracking-[0.1em]">Parque de Jogos do CER Tenente Valdez, Odivelas, Lisboa</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="relative h-[360px] overflow-hidden order-first md:order-last">
+            <Image
+              src="/Campo.jpeg"
+              alt="Campo Elite Football Lab"
+              fill
+              quality={100}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
           <iframe
             src="https://maps.google.com/maps?q=38.7782963,-9.2050189&z=16&output=embed"
             width="100%"
@@ -62,16 +72,6 @@ export default function Contacto() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização Elite Football Lab"
           />
-          <div className="relative h-[360px] overflow-hidden">
-            <Image
-              src="/Campo.jpeg"
-              alt="Campo Elite Football Lab"
-              fill
-              quality={100}
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
         </div>
       </div>
 
