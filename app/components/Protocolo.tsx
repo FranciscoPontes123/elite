@@ -5,35 +5,27 @@ import { motion } from "framer-motion";
 const fases = [
   {
     num: "P/01",
-    label: "Avaliação",
-    duracao: "45 min",
-    status: "Gratuita",
+    label: "Técnica",
+    duracao: "Individual",
+    status: "1-on-1",
     descricao:
-      "Diagnóstico técnico individual. Análise de pontos fortes, lacunas e objectivos do atleta. A base de tudo o que se segue.",
+      "Trabalho técnico personalizado. Cada sessão adaptada ao jogador — não ao grupo.",
   },
   {
     num: "P/02",
-    label: "Plano",
-    duracao: "48 h",
-    status: "Personalizado",
+    label: "Físico",
+    duracao: "Semanal",
+    status: "Adaptado",
     descricao:
-      "Programa individual construído a partir da avaliação. Totalmente personalizado.",
+      "Preparação física integrada no treino técnico. Velocidade, agilidade e explosividade.",
   },
   {
     num: "P/03",
-    label: "Treino",
-    duracao: "Semanal",
-    status: "1-on-1",
+    label: "Competitivo",
+    duracao: "Contínuo",
+    status: "Intenso",
     descricao:
-      "Sessões técnicas focadas no atleta. Intensidade com atenção ao detalhe.",
-  },
-  {
-    num: "P/04",
-    label: "Análise",
-    duracao: "Mensal",
-    status: "Contínua",
-    descricao:
-      "Filmagem, estatísticas e evolução. O atleta vê o que mudou e o que falta.",
+      "Situações de jogo reais. O atleta é treinado para competir, não apenas para treinar.",
   },
 ];
 
@@ -49,12 +41,12 @@ export default function Protocolo() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as [number,number,number,number] }}
           className="font-display font-black uppercase text-section text-fg leading-[0.9]"
         >
-          QUATRO FASES.
+          TREINO<br />INDIVIDUAL.
         </motion.h2>
       </div>
 
       {/* Grid de fases */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-rule">
+      <div className="grid grid-cols-1 md:grid-cols-3 border-t border-rule">
         {fases.map((fase, i) => (
           <motion.div
             key={fase.num}

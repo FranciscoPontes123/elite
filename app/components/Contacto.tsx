@@ -168,7 +168,7 @@ export default function Contacto() {
                 disabled={loading}
                 className="mt-2 inline-flex items-center justify-center bg-accent text-bg font-mono text-label uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-fg transition-colors duration-150 disabled:opacity-50"
               >
-                {loading ? "A enviar..." : "+ Marcar avaliação"}
+                {loading ? "A enviar..." : "+ Marcar treino"}
               </button>
             </form>
           )}

@@ -83,7 +83,7 @@ export default function AvaliacaoModal() {
             ) : (
               <>
                 <p className="font-mono text-label uppercase tracking-[0.22em] text-fg-dim mb-6">
-                  // Marcar avaliação
+                  // Marcar treino
                 </p>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   <Field label="Telemovel" name="telemovel" type="tel" placeholder="9XX XXX XXX" required />
@@ -111,7 +111,7 @@ export default function AvaliacaoModal() {
                     disabled={loading}
                     className="mt-2 bg-accent text-bg font-mono text-label uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-fg transition-colors duration-150 disabled:opacity-50"
                   >
-                    {loading ? "A enviar..." : "+ Marcar avaliação"}
+                    {loading ? "A enviar..." : "+ Marcar treino"}
                   </button>
                 </form>
               </>

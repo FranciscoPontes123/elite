@@ -64,7 +64,7 @@ export default function Nav() {
           href="#formulario"
           className="hidden md:inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 hover:bg-fg transition-colors duration-150"
         >
-          + Marcar avaliação
+          + Marcar treino
         </a>
 
         {/* Hamburger */}
@@ -113,7 +113,7 @@ export default function Nav() {
                   onClick={() => setMenuOpen(false)}
                   className="inline-flex items-center gap-2 bg-accent text-bg font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5"
                 >
-                  + Marcar avaliação
+                  + Marcar treino
                 </a>
               </li>
             </ul>

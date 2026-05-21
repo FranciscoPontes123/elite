@@ -50,7 +50,7 @@ export default function Hero() {
               href="#formulario"
               className="inline-flex items-center justify-center bg-accent text-bg font-mono text-label uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-fg transition-colors duration-150"
             >
-              + Marcar avaliação
+              + Marcar treino
             </a>
             <a
               href="#protocolo"

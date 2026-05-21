@@ -127,7 +127,7 @@ export default function Planos() {
                   : "border border-rule text-fg-dim hover:text-fg hover:border-fg"
               }`}
             >
-              Marcar avaliação
+              Marcar treino
             </a>
           </motion.div>
         ))}
