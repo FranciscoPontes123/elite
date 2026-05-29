@@ -4,6 +4,7 @@ import Protocolo from "@/app/components/Protocolo";
 import Staff from "@/app/components/Staff";
 import Planos from "@/app/components/Planos";
 import Contacto from "@/app/components/Contacto";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Planos />
         <Contacto />
       </main>
+      <Footer />
     </>
   );
 }

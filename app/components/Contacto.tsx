@@ -163,6 +163,25 @@ export default function Contacto() {
                 </select>
               </div>
 
+              <label className="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="consentimento"
+                  required
+                  className="mt-0.5 shrink-0 w-4 h-4 appearance-none border border-rule bg-bg-elev checked:bg-accent checked:border-accent focus:outline-none cursor-pointer transition-colors duration-150"
+                />
+                <span className="font-mono text-[11px] text-fg-dim leading-relaxed group-has-[:checked]:text-fg transition-colors duration-150">
+                  Li e aceito os{" "}
+                  <a href="/termos" target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2 hover:text-fg transition-colors duration-150">
+                    Termos e Condições
+                  </a>{" "}
+                  e a{" "}
+                  <a href="/privacidade" target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2 hover:text-fg transition-colors duration-150">
+                    Política de Privacidade
+                  </a>
+                </span>
+              </label>
+
               <button
                 type="submit"
                 disabled={loading}
